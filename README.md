@@ -1,4 +1,4 @@
-# GLCM-LBP-
+# GLCM-LBP
 1、1973 GLCM论文
   glcm.m 计算图像的Gray-Level Co-occurrence Matrix(GLCM)
   glcm_feature.m 计算GLCM纹理特征
