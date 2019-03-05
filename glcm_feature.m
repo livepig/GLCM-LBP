@@ -2,10 +2,10 @@ function feature = sum_diff_glcm_feature(glcm ,gray_level)
 % 
 % Sum and Difference Histograms for Texture Classification
 % IEEE TRANSACTIONS ON PATTERN ANALYSIS AND MACHINE INTELLIGENCE 
-% author£ºMichael Unser
+% authorï¼šMichael Unser
 % year:1986
 % 
-%% ±È½Ïglcm¼ÆËãÌØÕ÷ºÍ sum¡¢diff¼ÆËãÌØÕ÷µÄ²»Í¬
+%% æ¯”è¾ƒglcmè®¡ç®—ç‰¹å¾å’Œ sumã€diffè®¡ç®—ç‰¹å¾çš„ä¸åŒ
 %f1-f9
 feature = struct('mean',0,'variance',0,'energy',0,'correlation',0,'entropy',0, ...
     'contrast',0,'homogeneity',0,'cluster_shade',0,'cluseter_prominence',0);
