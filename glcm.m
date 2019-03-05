@@ -1,4 +1,4 @@
-%SI 范围 [1,gray_level]
+%SI 鑼冨洿 [1,gray_level]
 function [G,SI] = my_glcm(src , gray_level , row_step , col_step)
     G = zeros(gray_level);
     slope = 0;
@@ -10,10 +10,10 @@ function [G,SI] = my_glcm(src , gray_level , row_step , col_step)
     end
     intercept = 1 - (slope * I_min);
     
-    %floor 向下取整  imlincomb 线性乘
+    %floor 鍚戜笅鍙栨暣  imlincomb 绾挎�т箻
     %slope*I +intercept
     SI = floor(imlincomb(slope, I, intercept, 'double'));
-    %防止越界
+    %闃叉瓒婄晫
     SI(SI > gray_level) = gray_level;
     SI(SI < 1) = 1;
     
